@@ -1,1 +1,373 @@
-Hello World
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Erick Samaniego | Web & Mobile Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="meoMLH7lfXnEvVtNFG3OK-M4VYtjh-lD-5CFS4ge9MM" />
+    <link rel="stylesheet" href="{% static "css/fonts.css" %}">
+    <link rel="stylesheet" href="{% static "css/getmdl.css" %}">
+    <link rel="stylesheet" href="{% static "css/devicon.css" %}">
+    <link rel="manifest" href="{% static 'manisfests/manifest.json' %}" >
+    <meta name="theme-color" content="#40C4FF">
+    <style>
+        body{
+            background: #fafafa;
+        }
+        .mdl-grid{
+            max-width: 1280px;
+            padding: 2em;
+        }
+        .mdl-cell{
+            margin-top: 0;
+            padding-top: 0;
+        }
+        figure{
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+        figure img{
+            width: 100%;
+        }
+        figure h6{
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            text-shadow: 0px 0px 3px #eaeaea;
+        }
+        figure h6 span{
+            display: block;
+            font-weight: 100;
+            font-size: 12px;
+            text-shadow: none;
+        }
+
+        .panel-left main ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .panel-left main ul li > div {
+            display: flex;
+
+        }
+        .icon-list{
+            padding: 1.5em !important;
+
+        }
+        .icon-list i{
+            font-size: 32px;
+        }
+        .desc-list{
+            text-align: justify;
+        }
+        .panel-left main ul li .icon-list, .panel-left main ul li .desc-list{
+            padding: 1em;
+            box-sizing: border-box;
+        }
+        .panel-right{
+            padding: 1em;
+        }
+        .panel-right .row-panel{
+            display: flex;
+        }
+
+        .desc-list a {
+            color: white;
+            font-style: normal;
+            text-decoration: none;
+
+        }
+        .header-card{
+            padding-bottom: 0;
+        }
+        .type-phone{
+            display: block;
+            font-weight: 100;
+            color: #eaeaea;
+        }
+        .desc-text{
+            text-align: justify;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .desc-border{
+            border-bottom: 2px solid #d3d3d3;
+
+        }
+        .tech-icon{
+            font-size: 32px !important;
+            color: #adafb9 !important;
+
+        }
+        .subtitle{
+            margin: 0;
+            padding: 0;
+            color: #40C4FF;
+            font-weight: bold;
+        }
+        h5, h6, .header-card i{
+            color: #6f6f6f !important;
+        }
+        .title-name{
+            color: white !important;
+        }
+        .right-cell{
+            margin-right: 0;
+            margin-left: 16px;
+        }
+        .left-cell{
+            margin-right: 16px;
+            margin-left: 0;
+        }
+        @media (max-width: 700px) {
+            .mdl-grid{
+                max-width: 1280px;
+                padding: 0;
+            }
+            .tech-icon{
+                font-size: 24px !important;
+            }
+            .mdl-cell{
+                margin-right: 0;
+                margin-left: 0;
+                width: 100%;
+            }
+        .left-cell, .right-cell{
+            margin-right: 0;
+            margin-left: 0;
+        }
+        }
+        @media (max-width: 479px) {
+            .mdl-grid--no-spacing>.mdl-cell--12-col, .mdl-grid--no-spacing>.mdl-cell--12-col-phone.mdl-cell--12-col-phone{
+                padding: 1em !important;
+            }
+
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+  <main class="mdl-layout__content">
+      <div class="mdl-grid ">
+          <div  itemscope itemtype="http://schema.org/Person" class="mdl-color--blue-500 mdl-color-text--white panel-left mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
+              <header>
+                  <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                      <img src="{% static 'img/ericksamaniego_compress.jpg' %}" itemprop="contentUrl" alt="Erick Samaniego">
+                    <h6 class="title-name" itemprop="name">Erick Samaniego
+                    <span>Web & Mobile Developer</span>
+                    </h6>
+                  </figure>
+              </header>
+              <main>
+                  <div>
+                      <ul>
+                          <li>
+                            <div>
+                                <div class="icon-list">
+                                    <i class="material-icons">&#xE7FD;</i>
+                                </div>
+                                <div class="desc-list">
+                                    <span itemprop="description">
+                                        <p>Tengo 26 años y vivo en Ciudad Juárez Chih. Me dedico al desarrollo de aplicaciones móviles y web, siempre busco estar actualizado sobre  tecnologías y lenguajes de programación que pueda aplicar en mi trabajo día a día.
+                                        Me gusta trabajar en proyectos que representen un reto para mí. Hacer cosas que nunca había hecho y que impliquen aprender algo nuevo.</p>
+                                        <p>Me gusta conocer un poco de todo aprender de los demás y tratar de compartir lo que yo sé. No creo que haya cosas imposibles soló problemas a los que aún no se encuentra una solución.</p>
+                                    </span>
+                                </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                                <div class="icon-list">
+                                    <i class="material-icons">&#xE0CD;</i>
+                                </div>
+                                <div class="desc-list">
+                                    <p>
+                                        <span itemprop="telephone"><a class="mdl-color-text--white" href="tel:+526564229011">+52 (656) 422 9011</a></span>
+                                        <span class="type-phone">celular</span>
+                                    </p>
+                                </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                                <div class="icon-list">
+                                    <i class="material-icons">&#xE158;</i>
+                                </div>
+                                <div class="desc-list">
+                                    <p>
+                                        <span itemprop="email"><a class="mdl-color-text--white" href="mailto:erickdsama@gmail.com">erickdsama@gmail.com</a></span>
+                                        <span class="type-phone">personal</span>
+                                    </p>
+                                </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                                <div class="icon-list">
+                                <i title="Github" style="color: white !important;" class="tech-icon devicon-github-plain mdl-color-text--white"></i>
+                                </div>
+                                <div class="desc-list">
+                                    <p>
+                                        <span itemprop="email"><a class="mdl-color-text--white" target="_blank" href="https://github.com/erickdsama">github.com/erickdsama</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                                <div class="icon-list">
+                                    <i class="material-icons">&#xE0C8;</i>
+                                </div>
+                                <div class="desc-list">
+                                    <p class="mdl-color-text--white">
+                                        <span itemprop="address	"><a class="mdl-color-text--white" target="_blank" href="https://goo.gl/maps/AnVAZp8Nmop">Ciudad Juárez, Chihuahua</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                          </li>
+                      </ul>
+                  </div>
+              </main>
+          </div>
+          <div class=" mdl-cell mdl-cell--8-col mdl-cell--12-col-tablet">
+              <div class="mdl-grid--no-spacing">
+                  <div class=" mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                      <div class="header-card mdl-grid">
+                          <div class="mdl-color--white mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+                              <i style="font-size: 42px" class="material-icons">&#xEB3F;</i>
+                          </div>
+                          <div class="mdl-color--white mdl-cell mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                              <h5 style="font-weight: bold;     line-height: 50px; margin: 0">
+                                  Experiencia laboral
+                              </h5>
+                          </div>
+                      </div>
+                      <div class="mdl-grid">
+                          <div class="desc-text desc-border  mdl-cell mdl-cell--2-offset-desktop mdl-cell--2-offset-tablet mdl-cell--10-col mdl-cell--8-col-tablet mdl-cell--4-col-phone	">
+                              <h6 style="font-weight: bold; margin: 0">
+                                  Especialista en programación @Dirección de Tecnologías
+                              </h6>
+                              <p class="subtitle" itemprop="date">Juárez, Chihuahua — 2016, Actual</p>
+                              <p>
+                                Desarrollo aplicaciones móviles para IOS y android. Además de desarrollar sistemas para las dependencias gubernamentales del municipio de Ciudad Juárez.
+                              </p>
+                              <p>
+                                <i title="Github" class="tech-icon devicon-github-plain"></i>
+                                <i title="AngularJS" class="tech-icon devicon-angularjs-plain"></i>
+                                <i title="Python" class="tech-icon devicon-python-plain"></i>
+                                <i title="Linux" class="tech-icon devicon-linux-plain"></i>
+                                <i title="Android" class="tech-icon devicon-android-plain"></i>
+                                <i title="MySql" class="tech-icon devicon-mysql-plain"></i>
+                                <i title="Php" class="tech-icon devicon-php-plain"></i>
+                                <i title="Apple/IOS" class="tech-icon devicon-apple-original"></i>
+
+                              </p>
+                          </div>
+                          <div class="desc-text mdl-color--white mdl-cell  mdl-cell--2-offset-desktop mdl-cell--2-offset-tablet mdl-cell--10-col mdl-cell--8-col-tablet mdl-cell--4-col-phone	">
+                              <h6 style="font-weight: bold; margin: 0">
+                                  Desarrollador JR, @Ventamovil
+                              </h6>
+                              <p class="subtitle" itemprop="date">Juárez, Chihuahua — 2015, 2016</p>
+                              <p >
+                                      Me encargaba del desarrollo y mantenimiento de algunas de las aplicaciones que son usadas en la empresa. El principal giro de la empresa es la venta de tiempo aire a través de diferentes plataformas (Android, Windows Application, Web, Whatsapp)
+                              </p>
+                              <p>
+                                    <i title="Github" class="tech-icon devicon-github-plain"></i>
+                                    <i title="AngularJS" class="tech-icon devicon-angularjs-plain"></i>
+                                    <i title="Python" class="tech-icon devicon-python-plain"></i>
+                                    <i title="Linux" class="tech-icon devicon-linux-plain"></i>
+                                    <i title="Android" class="tech-icon devicon-android-plain"></i>
+                                    <i title="Docker" class="tech-icon devicon-docker-plain"></i>
+                                    <i title="Gulp" class="tech-icon devicon-gulp-plain"></i>
+                                    <i title="MySQL" class="tech-icon devicon-mysql-plain"></i>
+                                    <i title="NodeJS" class="tech-icon devicon-nodejs-plain"></i>
+                              </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mdl-color--white  mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                      <div class="header-card mdl-grid">
+                          <div class="mdl-color--white mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone	">
+                              <i style="font-size: 42px" class="material-icons">&#xE80C;</i>
+                          </div>
+                          <div class="mdl-color--white mdl-cell mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--3-col-phone	">
+                              <h5 style="font-weight: bold;     line-height: 50px; margin: 0">
+                                  Educación
+                              </h5>
+                          </div>
+                      </div>
+                      <div class="mdl-grid">
+                          <div class=" desc-text mdl-color--white mdl-cell  mdl-cell--2-offset-desktop mdl-cell--2-offset-tablet mdl-cell--10-col mdl-cell--8-col-tablet mdl-cell--4-col-phone	">
+                              <h6 style="font-weight: bold; margin: 0">
+                                  Universidad Autónoma de Ciudad Juárez
+                              </h6>
+                              <p class="subtitle" itemprop="degree">Ing. Sistemas Computacionales — 2013,2017</p>
+                              <p>
+                                  Actualmente estudio en la UACJ, donde cursó la carrera de Ing, Sistemas computacionales,
+                                  he participado en el desarrollo de algunas plataformas para la institución, de igual manera he tenido experiencias y retos que me han ayudado a crecer tanto profesionalmeente y en mi persona.
+                                  Estuve prestando servicio de beca trabajo durante 2 años en el área de Mantenimiento de centros de cómputo.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class=" mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                  <div style="padding: 0; width: 100%" class="mdl-grid">
+                      <div class="left-cell mdl-color--white  mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                          <div class=" header-card mdl-grid">
+                              <div class="mdl-color--white mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone	">
+                                  <i style="font-size: 42px" class="material-icons">&#xE800;</i>
+                              </div>
+                              <div class="mdl-color--white mdl-cell mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--3-col-phone	">
+                                  <h5 style="font-weight: bold;     line-height: 50px; margin: 0">
+                                    Habilidades Tecnicas
+                                  </h5>
+                              </div>
+                          </div>
+                          <div class="mdl-grid">
+                              <div class=" desc-text  mdl-cell  mdl-cell--2-offset-desktop mdl-cell--2-offset-tablet mdl-cell--10-col mdl-cell--8-col-tablet mdl-cell--4-col-phone	">
+
+                              </div>
+                          </div>
+                      </div>
+                      <div class="right-cell mdl-color--white  mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                          <div class=" header-card mdl-grid">
+                              <div class="mdl-color--white mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone	">
+                                  <i style="font-size: 42px" class="material-icons">&#xE800;</i>
+                              </div>
+                              <div class="mdl-color--white mdl-cell mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--3-col-phone	">
+                                  <h5 style="font-weight: bold;     line-height: 50px; margin: 0">
+                                    Habilidades Tecnicas
+                                  </h5>
+                              </div>
+                          </div>
+                          <div class="mdl-grid">
+                              <div class=" desc-text mdl-color--white mdl-cell  mdl-cell--2-offset-desktop mdl-cell--2-offset-tablet mdl-cell--10-col mdl-cell--8-col-tablet mdl-cell--4-col-phone	">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </main>
+</div>
+</body>
+{#<script>#}
+{#  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){#}
+{#  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),#}
+{#  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)#}
+{#  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');#}
+{#  ga('create', 'UA-99122020-1', 'auto');#}
+{#  ga('send', 'pageview');#}
+{#</script>#}
+<script defer src="{% static "js/material.min.js" %}"></script>
+
+</html>
